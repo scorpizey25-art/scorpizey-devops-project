@@ -1,7 +1,8 @@
-# Proyek DevOps: Membangun Lingkungan Pengembangan Lokal
 
-### Deskripsi
-Dokumen ini merangkum langkah-langkah yang diambil untuk menyiapkan lingkungan pengembangan DevOps lokal menggunakan Windows Subsystem for Linux (WSL). Lingkungan ini berfungsi sebagai pondasi untuk proyek-proyek otomatisasi, containerization, dan cloud di masa depan.
+*   **`src/`**: Folder untuk kode aplikasi utama.
+*   **`scripts/`**: Folder untuk semua script otomatisasi (Python, Bash, dll.).
+*   **`infra/`**: Folder untuk kode infrastruktur (Terraform, Ansible, dll.).
+*   **`docs/`**: Folder untuk dokumentasi teknis yang lebih mendalam.
 
 ---
 
@@ -50,4 +51,4 @@ Selama proses ini, beberapa kendala teknis ditemui. Berikut adalah rincian masal
 
 -   [x] Instalasi dan konfigurasi Git.
 -   [ ] Instalasi Python.
--   [ ] Memulai proyek pertama: Alat Otoma
+-   [ ] Memulai proyek pertama: Alat Otomasi Pencadangan File.
