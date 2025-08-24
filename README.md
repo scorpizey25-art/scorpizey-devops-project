@@ -4,7 +4,7 @@
 *   **`infra/`**: Folder untuk kode infrastruktur (Terraform, Ansible, dll.).
 *   **`docs/`**: Folder untuk dokumentasi teknis yang lebih mendalam.
 
---- last date : 24/08/2025 05:00 am
+### Progres Harian: Sabtu, 23 Agustus 2025
 
 ### Progres Tahap 1: Persiapan Lingkungan Dasar
 
@@ -47,8 +47,50 @@ Selama proses ini, beberapa kendala teknis ditemui. Berikut adalah rincian masal
 
 ---
 
+### Progres Harian: Minggu, 24 Agustus 2025
+
+**Tujuan**
+Hari ini, kami berfokus untuk menerapkan alur kerja _**feature branching**_ yang merupakan praktik standar industri. Tujuannya adalah untuk bekerja pada fitur baru (`skrip backup`) secara terisolasi sebelum menggabungkannya ke _branch_ utama (`main`).
+
+**Langkah-langkah yang Dilakukan**
+1.  Membuat _branch_ fitur baru: `git checkout -b fitur/backup-otomasi`.
+2.  Menambahkan _file_ `backup_script.py` dan melakukan _commit_ pertama di _branch_ fitur.
+3.  Berhasil melakukan _push_ pertama dari _branch_ fitur ke GitHub.
+4.  Berpindah ke _branch_ utama (`main`) dengan `git checkout main`.
+5.  Menggabungkan _branch_ fitur ke _branch_ utama dengan `git merge fitur/backup-otomasi`.
+6.  Mengunggah (_push_) hasil _merge_ ke _remote_ (`main`) dengan `git push origin main`.
+7.  Menghapus _branch_ fitur lokal dengan `git branch -d fitur/backup-otomasi`.
+8.  Menghapus _branch_ fitur dari _remote_ dengan `git push origin --delete fitur/backup-otomasi`.
+
+**Pencapaian**
+* Berhasil membuat _branch_ fitur baru (`fitur/backup-otomasi`) untuk pengembangan.
+* Melakukan _commit_ pertama dari skrip Python di _branch_ fitur.
+* Berhasil menggabungkan (_merge_) perubahan dari _branch_ fitur ke _branch_ utama (`main`).
+* Berhasil menghapus _branch_ fitur dari repositori lokal dan _remote_ setelah digabungkan.
+
+**Masalah/Kendala**
+* **Masalah:** Terdapat kesalahan pengetikan saat membuat _branch_ fitur, yang mengakibatkan terbentuknya dua _branch_ yang berbeda.
+* **Solusi:** Mengatasi masalah pengetikan _branch_ dengan menghapus _branch_ yang salah menggunakan perintah `git branch -d`.
+* **Masalah:** Terjadi kebingungan mengenai _file_ yang sudah di-_merge_ secara lokal namun tidak langsung muncul di _repository_ _remote_.
+* **Solusi:** Memahami bahwa `git push` diperlukan untuk menyinkronkan perubahan dari _repository_ lokal ke _repository_ _remote_.
+
+**Kesimpulan**
+Semua fondasi sudah lengkap. Lingkungan pengembangan, _tools_, dan alur kerja Git sudah siap dan terverifikasi. Kami sekarang siap untuk melanjutkan ke tahap _coding_ fungsional.
+
+---
+
 ### Rencana Selanjutnya
 
 -   [x] Instalasi dan konfigurasi Git.
--   [ ] Instalasi Python.
+-   [x] Instalasi Python.
 -   [ ] Memulai proyek pertama: Alat Otomasi Pencadangan File.
+
+Setelah Anda memperbarui file README.md tersebut di VS Code, jangan lupa untuk menyimpan dan mengunggahnya dengan commit baru.
+Bash
+
+git add README.md
+git commit -m "docs: menambahkan progres harian dan ringkasan"
+git push origin main
+
+
+Gemini dapat membuat kesalahan, jadi periksa kembali responsnya
